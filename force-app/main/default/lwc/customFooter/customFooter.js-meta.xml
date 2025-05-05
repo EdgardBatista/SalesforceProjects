@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+  <apiVersion>60.0</apiVersion>
+  <isExposed>true</isExposed>
+  <targets>
+    <target>lightning__FlowScreen</target>
+  </targets>
+  <targetConfigs>
+    <targetConfig targets="lightning__FlowScreen">
+      <property 
+        name="footerMode" 
+        type="String" 
+        label="Footer Mode" 
+        description="Controls which buttons are shown (e.g., 'account', 'contact')" 
+        role="inputOnly"/>
+
+      <property 
+        name="outputValue" 
+        type="String" 
+        label="Selected Action" 
+        description="Stores the action selected (cancel, save, next, etc.)" 
+        role="outputOnly"/>
+    </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>

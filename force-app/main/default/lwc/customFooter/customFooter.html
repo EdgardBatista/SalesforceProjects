@@ -1,0 +1,60 @@
+<template>
+    <div class="slds-p-around_x-small">
+        <!-- Linha superior -->
+        
+       <hr  class="slds-m-bottom_xx-small slds-divider" />
+        
+
+        <div class="slds-grid slds-grid_align-end">
+            <template if:true={isContactScreen}>
+                <lightning-button
+                    label="Cancel"
+                    onclick={handleCancelClick}
+                    class="slds-m-left_x-small"
+                ></lightning-button>
+
+                <lightning-button
+                    label="Save"
+                    variant="brand"
+                    onclick={handleSaveClick}
+                    class="slds-m-left_x-small"
+                ></lightning-button>
+
+                <lightning-button
+                    label="Save & Next"
+                    variant="brand"
+                    onclick={handleNextClick}
+                    class="slds-m-left_x-small"
+                ></lightning-button>
+            </template>
+
+            <template if:true={isOpportunityScreen}>
+                <lightning-button
+                    label="Cancel"
+                    onclick={handleCancelClick}
+                    class="slds-m-left_x-small"
+                ></lightning-button>
+
+                <lightning-button
+                    label="Save"
+                    variant="brand"
+                    onclick={handleSaveClick}
+                    class="slds-m-left_x-small"
+                ></lightning-button>
+
+                <lightning-button
+                    label="Previous"
+                    onclick={handlePreviousClick}
+                    class="slds-m-left_x-small"
+                ></lightning-button>
+
+                <lightning-button
+                    label="Save & Finish"
+                    variant="brand"
+                    onclick={handleSaveAndFinishClick}
+                    class="slds-m-left_x-small"
+                ></lightning-button>
+            </template>
+        </div>
+    </div>
+</template>
